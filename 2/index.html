@@ -137,25 +137,28 @@
         }
 
         @keyframes textZoomInOut {
+            
             0% {
-                font-size: 10px;
+                transform: scale(1);
             }
 
             25% {
-                transform.scale(1.7);
+                <!-- transform.scale(1.7); -->
+                transform: scale(1.7);
             }
 
             50% {
-                transform.scale(1);
+                transform: scale(1);
             }
 
             75% {
-                transform.scale(1.7);
+                transform: scale(1.7);
+            }
+            100% {
+                transform: scale(1);
             }
 
-            100% {
-                font-size: 10px;
-            }
+            
         }
     </style>
 </head>
