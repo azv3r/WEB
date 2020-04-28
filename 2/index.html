@@ -39,128 +39,101 @@
 
         .round1 {
             animation: 3s ease-in-out infinite moveround1;
+            left: 0px;
+            top: 0px;
         }
 
         .round2 {
             animation: 3s ease-in-out infinite moveround2;
+            left: calc(100% - 5px);
+            top: 0px;
         }
 
         .round3 {
             animation: 3s ease-in-out infinite moveround3;
+            left: calc(100% - 5px);
+            top: calc(100% - 5px);
         }
 
         .round4 {
             animation: 3s ease-in-out infinite moveround4;
+            left: 0px;
+            top: calc(100% - 5px);
         }
 
         @keyframes moveround1 {
-            0% {
-                left: 0px;
-                top: 0px;
-            }
+            
 
             25% {
-                left: calc(100% - 5px);
-                top: 0px;
+               transform: translateX(2000%);
             }
 
             50% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
+                transform: translate(2000%, 2000%);
+
             }
 
             75% {
-                left: 0px;
-                top: calc(100% - 5px);
+                transform: translateY(2000%);
             }
 
-            100% {
-                left: 0px;
-                top: 0px;
-            }
+            
         }
 
         @keyframes moveround2 {
-            0% {
-                left: calc(100% - 5px);
-                top: 0px;
-            }
+            
 
             25% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
+               transform: translateY(2000%);
             }
 
             50% {
-                left: 0px;
-                top: calc(100% - 5px);
+                transform: translate(-2000%, 2000%);
+
             }
 
             75% {
-                left: 0px;
-                top: 0px;
+                transform: translateX(-2000%);
             }
 
-            100% {
-                left: calc(100% - 5px);
-                top: 0px;
-            }
+            
         }
 
         @keyframes moveround3 {
-            0% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
-            }
-
+           
             25% {
-                left: 0px;
-                top: calc(100% - 5px);
+               transform: translateX(-2000%);
             }
 
             50% {
-                left: 0px;
-                top: 0px;
+                transform: translate(-2000%, -2000%);
+
             }
 
             75% {
-                left: calc(100% - 5px);
-                top: 0px;
+                transform: translateY(-2000%);
             }
 
-            100% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
-            }
+            
         }
 
         @keyframes moveround4 {
-            0% {
-                left: 0px;
-                top: calc(100% - 5px);
-            }
+            
 
             25% {
-                left: 0px;
-                top: 0px;
+               transform: translateY(-2000%);
             }
 
-            
             50% {
-                left: calc(100% - 5px);
-                top: 0px;
+                transform: translate(2000%, -2000%);
+
             }
-            
+
             75% {
-                left: calc(100% - 5px);
-                top: calc(100% - 5px);
+                transform: translateX(2000%);
             }
 
-            100% {
-                left: 0px;
-                top: calc(100% - 5px);
-            }
-
+            
         }
 
         @keyframes textZoomInOut {
@@ -169,15 +142,15 @@
             }
 
             25% {
-                font-size: 17px;
+                transform.scale(1.7);
             }
 
             50% {
-                font-size: 10px;
+                transform.scale(1);
             }
 
             75% {
-                font-size: 17px;
+                transform.scale(1.7);
             }
 
             100% {
