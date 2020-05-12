@@ -1,9 +1,9 @@
-export async function pokemon() {
+export async function pikachu() {
     let data = await fetch('https://pokeapi.co/api/v2/pokemon/pikachu/')
     let jsonValue = await data.json()
 
     
-    function pokemonInfo(value) {
+    function pikachuInfo(value) {
         let template = ''
         template += `<img style="width: 300px" src="${value.sprites.front_default}">`
         template += `<h3>${value.name}<h3/>`
@@ -20,5 +20,5 @@ export async function pokemon() {
         app.innerHTML = template
     }
 
-    pokemonInfo(jsonValue)
+    pikachuInfo(jsonValue)
 }

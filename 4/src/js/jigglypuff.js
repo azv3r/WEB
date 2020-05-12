@@ -3,7 +3,7 @@ export async function jigglypuff() {
     let jsonValue = await data.json()
 
     
-    function pokemonInfo(value) {
+    function jigglyInfo(value) {
         let template = ''
         template += `<img style="width: 300px" src="${value.sprites.front_default}">`
         template += `<h3>${value.name}<h3/>`
@@ -20,5 +20,5 @@ export async function jigglypuff() {
         app.innerHTML = template
     }
 
-    pokemonInfo(jsonValue)
+    jigglyInfo(jsonValue)
 }

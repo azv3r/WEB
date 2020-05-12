@@ -1,13 +1,13 @@
 import { home } from './home';
-import { pokemon } from './pokemon';
+import { pikachu } from './pikachu';
 import { jigglypuff } from './jigglypuff.js'
 
 let btnHome = document.querySelector('.home'),
-    btnPokemon = document.querySelector('.pokemon'),
+    btnPikachu = document.querySelector('.pikachu'),
     btnJiggly = document.querySelector('.jigglypuff'),
     app = document.querySelector('#app')
 
 home()
 btnHome.onclick = home
-btnPokemon.onclick = pokemon
+btnPikachu.onclick = pikachu
 btnJiggly.onclick = jigglypuff
